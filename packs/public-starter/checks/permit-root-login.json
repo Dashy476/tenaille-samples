@@ -1,0 +1,9 @@
+{
+  "id": "permit-root-login",
+  "title": "PermitRootLogin value is recorded",
+  "destructive": false,
+  "reads": "services[name=sshd].config.permit_root_login",
+  "rule": "nonempty",
+  "pass_note": "The flag is recorded. The check does not edit sshd_config.",
+  "fail_note": "PermitRootLogin was not recorded."
+}

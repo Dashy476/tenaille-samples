@@ -1,0 +1,9 @@
+{
+  "id": "listening-service-recorded",
+  "title": "at least one service is recorded",
+  "destructive": false,
+  "reads": "services",
+  "rule": "nonempty",
+  "pass_note": "Service rows came from the fixture, not from a port scan.",
+  "fail_note": "No services were recorded."
+}

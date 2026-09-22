@@ -1,0 +1,9 @@
+{
+  "id": "package-manager-present",
+  "title": "a package manager is named",
+  "destructive": false,
+  "reads": "package_managers",
+  "rule": "nonempty",
+  "pass_note": "The inventory names a package manager. No package database was queried.",
+  "fail_note": "No package manager was recorded."
+}

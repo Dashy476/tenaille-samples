@@ -1,0 +1,2 @@
+# Tenaille sample uses the Python standard library only.
+# `pip install -r requirements.txt` is intentionally a no-op.

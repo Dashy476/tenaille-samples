@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "fixture": true,
+  "authorization": "synthetic-lab",
+  "collected_by": "HARBNGR-sample",
+  "collected_note": "Hand-written lab fixture. No host was contacted.",
+  "host": {
+    "id": "lab-web-01",
+    "hostname": "lab-web-01",
+    "exposure": "lab-only",
+    "addresses": ["203.0.113.10"],
+    "os": {
+      "family": "linux",
+      "distro": "ubuntu",
+      "version": "22.04"
+    }
+  },
+  "package_managers": ["apt"],
+  "packages": [
+    {
+      "name": "openssh-server",
+      "version": "1:8.9p1-3ubuntu0.1",
+      "source": "apt"
+    }
+  ],
+  "services": [
+    {
+      "name": "sshd",
+      "listen": ["203.0.113.10:22"],
+      "version": "OpenSSH_8.9p1",
+      "config": {
+        "permit_root_login": "no",
+        "password_authentication": "no",
+        "allow_agent_forwarding": "yes"
+      }
+    }
+  ],
+  "identity": {
+    "sudo_group_members": ["labadmin"]
+  }
+}

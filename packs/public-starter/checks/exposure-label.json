@@ -1,0 +1,9 @@
+{
+  "id": "exposure-label",
+  "title": "exposure label is recorded",
+  "destructive": false,
+  "reads": "host.exposure",
+  "rule": "nonempty",
+  "pass_note": "Exposure (lab-only or otherwise) is what keeps CVSS from setting priority alone.",
+  "fail_note": "host.exposure is empty."
+}

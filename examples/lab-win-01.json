@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "fixture": true,
+  "authorization": "synthetic-lab",
+  "collected_by": "HARBNGR-sample",
+  "collected_note": "Hand-written Windows lab fixture. No host was contacted. Addresses use the documentation range TEST-NET-3.",
+  "host": {
+    "id": "lab-win-01",
+    "hostname": "lab-win-01",
+    "exposure": "lab-only",
+    "addresses": ["203.0.113.20"],
+    "os": {
+      "family": "windows",
+      "distro": "windows-server",
+      "version": "2022"
+    }
+  },
+  "package_managers": ["winget"],
+  "packages": [
+    {
+      "name": "Microsoft Edge",
+      "version": "120.0.0.0",
+      "source": "uninstall-registry"
+    }
+  ],
+  "services": [
+    {
+      "name": "winrm",
+      "listen": ["203.0.113.20:5985"],
+      "version": "",
+      "config": {}
+    }
+  ],
+  "identity": {
+    "sudo_group_members": []
+  }
+}

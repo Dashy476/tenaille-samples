@@ -1,0 +1,9 @@
+{
+  "id": "openssh-package",
+  "title": "an OpenSSH package version is recorded",
+  "destructive": false,
+  "reads": "packages[name=openssh-server].version",
+  "rule": "nonempty",
+  "pass_note": "Package version is available for a later changelog comparison. This check does not do that comparison.",
+  "fail_note": "openssh-server package version was not recorded."
+}

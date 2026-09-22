@@ -1,0 +1,9 @@
+{
+  "id": "authorization-label",
+  "title": "inventory is marked as a synthetic lab",
+  "destructive": false,
+  "reads": "authorization",
+  "rule": "synthetic-lab",
+  "pass_note": "authorization is synthetic-lab. Tenaille will not assess any other label in this sample.",
+  "fail_note": "authorization is not synthetic-lab."
+}

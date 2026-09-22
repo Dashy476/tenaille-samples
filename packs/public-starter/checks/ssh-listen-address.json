@@ -1,0 +1,9 @@
+{
+  "id": "ssh-listen-address",
+  "title": "sshd listen address is recorded",
+  "destructive": false,
+  "reads": "services[name=sshd].listen",
+  "rule": "nonempty",
+  "pass_note": "The fixture records where sshd listens. Nothing was probed.",
+  "fail_note": "No sshd listen address in this inventory."
+}

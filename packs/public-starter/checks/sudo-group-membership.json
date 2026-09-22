@@ -1,0 +1,9 @@
+{
+  "id": "sudo-group-membership",
+  "title": "sudo group membership field is present",
+  "destructive": false,
+  "reads": "identity.sudo_group_members",
+  "rule": "list",
+  "pass_note": "The field is a list. An empty list is still a recording, not a finding.",
+  "fail_note": "sudo group membership was not recorded as a list."
+}

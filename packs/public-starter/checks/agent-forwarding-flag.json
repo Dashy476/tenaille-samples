@@ -1,0 +1,9 @@
+{
+  "id": "agent-forwarding-flag",
+  "title": "agent forwarding flag is recorded",
+  "destructive": false,
+  "reads": "services[name=sshd].config.allow_agent_forwarding",
+  "rule": "nonempty",
+  "pass_note": "AllowAgentForwarding is written down. The check does not change it.",
+  "fail_note": "Agent forwarding policy was not recorded."
+}

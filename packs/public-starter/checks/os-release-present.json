@@ -1,0 +1,9 @@
+{
+  "id": "os-release-present",
+  "title": "OS release is recorded",
+  "destructive": false,
+  "reads": "host.os.version",
+  "rule": "nonempty",
+  "pass_note": "Family, distro, and version live on host.os. This check requires the version.",
+  "fail_note": "host.os.version is empty."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "sshd-version",
+  "title": "sshd version string is recorded",
+  "destructive": false,
+  "reads": "services[name=sshd].version",
+  "rule": "nonempty",
+  "pass_note": "A version string is present for later CPE comparison.",
+  "fail_note": "No sshd version string in this inventory."
+}
